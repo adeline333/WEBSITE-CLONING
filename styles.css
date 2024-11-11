@@ -79,3 +79,81 @@
 .hero-button:hover {
     background-color: darkblue;
 }
+
+
+
+/* Hero section */
+.hero {
+    background-image: url('./Dad-daughter.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+/* Hero text */
+.hero-text {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    color: white;
+    background-color: blue;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.hero-button:hover {
+    background-color: darkblue;
+}
+
+/* Horizontal Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between the three parts */
+    width: 80%; /* Adjust width as needed */
+    margin-top: 20px; /* Space between hero content and navbar */
+}
+
+.nav-left, .nav-center, .nav-right {
+    display: flex;
+    align-items: center; /* Vertically center text and button */
+}
+
+.nav-left p, .nav-center p {
+    margin: 0;
+    font-size: 18px;
+    color:black;
+    display:block;
+}
+
+.nav-right .button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-right .button:hover {
+    background-color: darkblue;
+}
