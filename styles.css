@@ -1,88 +1,81 @@
 /* Style for the navbar container */
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .company-name {
-    font-size: 18px;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white; 
+    padding: 15px 20px;  /* Slightly increased padding */
+    border-bottom: 1px solid #ddd; 
+    font-size: 18px; /* Increased navbar font size */
+}
+
+.company-name {
+    font-size: 32px;  /* Make the company name bigger */
     font-weight: bold;
     color: blue;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     display: flex;
-    gap: 15px;
-  }
-  
-  .navbar a {
-    color: black;
+    gap: 20px;  /* Slightly increased space between links */
+}
+
+.navbar a {
+    color: black; 
     text-decoration: none;
     font-size: 16px;
-  }
-  
-  .navbar a:hover {
-    color: #555;
-  }
-  
-  /* Hero section */
-  .hero {
+    display: flex;
+    align-items: center; /* Aligns the icon and text vertically */
+}
+
+.navbar a i {
+    margin-right: 8px;  /* Space between the icon and text */
+    color: blue; /* Blue icon color */
+}
+
+.navbar a:hover {
+    color: #555; /* Slightly darker shade on hover */
+}
+
+/* Hero section */
+.hero {
     background-image: url('./Dad-daughter.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     height: 100vh; /* Full viewport height */
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    position: relative;
     color: white;
-    margin-top: 60px; /* Offset for fixed navbar height */
-  }
-  
-  /* Hero title and subtitle */
-  .hero-title {
-    font-size: 64px;
-    font-weight: bold;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for readability */
-  }
-  
-  .hero-subtitle {
+    text-align: center;
+}
+
+/* Hero text */
+.hero-text {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
     font-size: 24px;
-    margin: 10px 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Hero button */
-  .hero-button {
+    margin-bottom: 20px;
+}
+
+.hero-button {
     color: white;
     background-color: blue;
     padding: 10px 20px;
-    font-size: 20px;
-    border: none;
+    text-decoration: none;
+    font-size: 18px;
     border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .hero-button:hover {
+}
+
+.hero-button:hover {
     background-color: darkblue;
-  }
-  
-  /* Remove default margin for the body to avoid scroll issues */
-  body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden;
-  }
-  
+}
