@@ -82,14 +82,14 @@
 
 
 
-/* Hero section */
+/* Hero section styling */
 .hero {
     background-image: url('./Dad-daughter.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -97,7 +97,7 @@
     text-align: center;
 }
 
-/* Hero text */
+/* Hero text styling */
 .hero-text {
     padding: 20px;
     border-radius: 8px;
@@ -126,34 +126,54 @@
     background-color: darkblue;
 }
 
-/* Horizontal Navigation Bar */
-.navbar {
+/* Search bar styling */
+/* Search bar styling */
+.search-bar {
     display: flex;
-    justify-content: space-between; /* Space between the three parts */
-    width: 80%; /* Adjust width as needed */
-    margin-top: 20px; /* Space between hero content and navbar */
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px;
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.nav-left, .nav-center, .nav-right {
-    display: flex;
-    align-items: center; /* Vertically center text and button */
+.search-part {
+    text-align: center;
+    flex: 1;
 }
 
-.nav-left p, .nav-center p {
+.rounded-box {
+    background-color: #f0f0f0; /* Light background color for each section */
+    padding: 10px 15px;
+    border: 2px solid black; /* Black border around each box */
+    border-radius: 20px; /* Rounded corners on the left and right */
+    display: inline-block;
+}
+
+.search-part p {
     margin: 0;
-    font-size: 18px;
-    color:black;
-    display:block;
+    font-size: 16px;
+    color: black;
 }
 
-.nav-right .button {
-    padding: 10px 20px;
-    background-color: blue;
+.date-range {
+    margin-top: 4px;
+    font-size: 14px;
+    color: gray;
+}
+
+.search-button .button {
+    background-color: rgb(11, 11, 48);
     color: white;
-    text-decoration: none;
+    padding: 10px 20px;
     border-radius: 5px;
+    text-decoration: none;
 }
 
-.nav-right .button:hover {
+.search-button .button:hover {
     background-color: darkblue;
 }
+
